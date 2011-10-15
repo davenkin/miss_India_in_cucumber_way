@@ -12,8 +12,7 @@ Feature: Watch Indian movies, dances and songs
     Then I should be watching this video
   Examples:
   |movie|
-  |three idiots       |
-  |slumdog millionaire|
-  |pyaar impossible   |
   |my name is khan    |
+  |pyaar impossible   |
+  |three idiots       |
   |Mohabbatein        |
