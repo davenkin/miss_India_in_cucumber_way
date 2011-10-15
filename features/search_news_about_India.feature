@@ -3,8 +3,13 @@ Feature: Search news about India
   I want to know what's going on in India
   So that I am informed of the events currently happening in India
 
-  Scenario: Search news for India
-    Given I am on google home page
-    And I switch to news search page
-    When I search for "India"
-    Then I should see at least 10 results
+  Scenario Outline: Search recent news about India
+    Given I am on Google "News" page
+    When I search for '<key_word>'
+    Then I should see the recent news about '<key_word>'
+   Examples:
+    |key_word          |
+    |India             |
+    |ThoughtWorks India|
+    |Bangalore         |
+    |Taj Mahal         |
