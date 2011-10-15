@@ -1,7 +1,7 @@
 class GooglePage
   attr_accessor :search_filed, :google_search_button
 
-  URL = "www.google.com.sg"
+  URL = "www.google.co.in"
 
   def initialize(browser)
     @browser = browser

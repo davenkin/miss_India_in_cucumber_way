@@ -1,3 +1,4 @@
+@news_about_India
 Feature: Search news about India
   As an enthusiast of India
   I want to know what's going on in India
@@ -10,6 +11,6 @@ Feature: Search news about India
    Examples:
     |key_word          |
     |India             |
-    |ThoughtWorks India|
-    |Bangalore         |
-    |Taj Mahal         |
+#    |ThoughtWorks India|
+#    |Bangalore         |
+#    |Taj Mahal         |
