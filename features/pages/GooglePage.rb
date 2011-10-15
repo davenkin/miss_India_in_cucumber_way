@@ -6,7 +6,7 @@ class GooglePage
   def initialize(browser)
     @browser = browser
     @search_filed = @browser.text_field(:name => "q")
-    @google_search_button = @browser.button(:name => "btnG")
+    @google_search_button = @browser.element_by_xpath("/html/body/div[3]/div/div/div/div/div/div/div[2]/span/form/div/span")
   end
 
   def method_missing(sym, *args, &block)
