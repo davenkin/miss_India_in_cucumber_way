@@ -14,5 +14,4 @@ require_dir File.join(File.dirname(__FILE__), "../pages")
 
 Before do
   @browser = Watir::Browser.new :firefox
-  @browser.text
 end

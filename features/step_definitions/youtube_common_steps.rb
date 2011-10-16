@@ -1,9 +1,10 @@
 Given /^I am on "([^"]*)" homepage$/ do |arg1|
-  pending # express the regexp above with the code you wish you had
+@youtube_page = YouTubePage.new @browser
+@youtube_page.visit
 end
 
-When /^I search for "([^"]*)"$/ do |arg1|
-  pending # express the regexp above with the code you wish you had
+When /^I search for "([^"]*)"$/ do |key_word|
+  @youtube_page.search_for key_word
 end
 
 Then /^I should see video results$/ do
@@ -17,4 +18,5 @@ end
 Then /^I should be watching this video$/ do
   pending # express the regexp above with the code you wish you had
 end
+
 
