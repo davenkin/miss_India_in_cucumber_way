@@ -13,7 +13,7 @@ Then /^I should see video results$/ do
   #@youtube_page.put_video_text
 end
 
-When /^I click one video link$/ do
+When /^I click one video link randomly$/ do
   @youtube_page.watch_random_video
   #sleep(30)
 end

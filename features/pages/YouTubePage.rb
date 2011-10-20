@@ -1,5 +1,5 @@
 class YouTubePage
-  attr_accessor :search_filed, :google_search_button
+  attr_accessor :search_filed, :search_button
 
   YOUTUBE_URL = "http://www.youtube.com/"
 
@@ -46,7 +46,9 @@ class YouTubePage
 
   def put_video_text
     links = @browser.links.collect { |link| link if link.href.include? 'http://www.youtube.com/watch?' }
-     unique_array links
+
+    unique_array links
     links.each {|link| puts link.text}
   end
+
 end

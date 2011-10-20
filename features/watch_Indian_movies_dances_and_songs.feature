@@ -8,7 +8,7 @@ Feature: Watch Indian movies, dances and songs
     Given I am on youtube homepage
     When I search for "<movie>" on Youtube
     Then I should see video results
-    When I click one video link
+    When I click one video link randomly
     Then I should be watching this video
   Examples:
   |movie|
@@ -16,3 +16,4 @@ Feature: Watch Indian movies, dances and songs
   |pyaar impossible   |
   |three idiots       |
   |Mohabbatein        |
+# |to add more movies here as you like|

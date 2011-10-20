@@ -8,5 +8,5 @@ Feature: Learn how to wear a saree
     Given I am on youtube homepage
     When I search for "how to wear a saree" on Youtube
     Then I should see video results
-    When I click one video link
+    When I click one video link randomly
     Then I should be watching this video
