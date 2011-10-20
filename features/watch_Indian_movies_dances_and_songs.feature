@@ -5,8 +5,8 @@ Feature: Watch Indian movies, dances and songs
   So that I can enjoy myself
 
   Scenario Outline: Watch Indian dances and songs on youtube
-    Given I am on "youtube" homepage
-    When I search for '<movie>'
+    Given I am on youtube homepage
+    When I search for "<movie>" on Youtube
     Then I should see video results
     When I click one video link
     Then I should be watching this video

@@ -1,7 +1,7 @@
 @news_about_India
 Feature: Search news about India
-  As an enthusiast of India
-  I want to know what's going on in India
+  As a person who keep missing India
+  I want to know what's going on in that country
   So that I am informed of the events currently happening in India
 
   Scenario Outline: Search recent news about India
@@ -11,6 +11,7 @@ Feature: Search news about India
    Examples:
     |key_word          |
     |India             |
-#    |ThoughtWorks India|
-#    |Bangalore         |
-#    |Taj Mahal         |
+    |ThoughtWorks India|
+    |Bangalore         |
+    |Taj Mahal         |
+#   |to add more keywords as you like|
