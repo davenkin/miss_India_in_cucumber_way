@@ -1,7 +1,7 @@
 @news_about_India
 Feature: Search news about India
   As a person who keep missing India
-  I want to know what's going on in that country
+  I want to know what's going on in India
   So that I am informed of the events currently happening in India
 
   Scenario Outline: Search recent news about India

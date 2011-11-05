@@ -7,6 +7,7 @@ class GooglePage
     @browser = browser
     @search_filed = @browser.text_field(:name => "q")
     @google_search_button = @browser.element_by_xpath("/html/body/div[3]/div/div/div/div/div/div/div[2]/span/form/div/span")
+    @google_search_button_with_name = @browser.button(:name => "btnG")
   end
 
   def method_missing(sym, *args, &block)
@@ -21,6 +22,11 @@ class GooglePage
     if @browser.link(:text => "English").exist?
        @browser.link(:text => "English").click
    end
+  end
+
+  def search_address address
+    self.search_filed.set address
+    @google_search_button_with_name.click
   end
 
   def search_for key_word
